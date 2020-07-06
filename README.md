@@ -1,11 +1,7 @@
 # Baycomse
 > The MATLAB packge for "Bayesian compositional regression with structured priors for microbiome feature selection"
 
-%%%%%%%%Please refer to our paper%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%Bayesian compositional regression with structured priors for microbiome feature selection$%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%by Liangliang Zhang, Yushu Shi, Robert R. Jenq, Kim-Anh Do, Christine B. Peterson%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%All rights reserved%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The proposed Bayesian sparse regression model for microbiome data addresses the challenges, including the compositional nature of the data, the high dimension, and the relatedness among the features. To address the fixed-sum constraint, we propose a generalized transformation and z-prior, which enables us to impose sparsity directly on the p regression coefficients. To take advantage of the phylogenetic tree information, we formulate a structured prior to link the selection of closely related organisms, which are likely to have a similar effect on the outcome.
 
 This package includes 4 folders: BayesianContrast, BayesianGeneralize, RealDataRelated and GenerateSimData. 
 
