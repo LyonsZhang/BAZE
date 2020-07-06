@@ -1,8 +1,6 @@
-# ProgPermute
-> Progressive permutation for a dynamic representation of the robustness of microbiome discoveries
+# Baycomse
+> The MATLAB packge for "Bayesian compositional regression with structured priors for microbiome feature selection"
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%This is the Bayesian Composition Selection package%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%Please refer to our paper%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%Bayesian compositional regression with structured priors for microbiome feature selection$%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%by Liangliang Zhang, Yushu Shi, Robert R. Jenq, Kim-Anh Do, Christine B. Peterson%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
