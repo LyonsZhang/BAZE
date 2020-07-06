@@ -150,6 +150,7 @@ tic
 [gamma,betahat,MSE,nselect,Yhat]=gibbsgamma(nburnin,niter,p,nop,Y, X,T, a, Q, n,tau,nu,omega,seed,true,stand,true);
 toc
 ```
+> %%%Subsequent steps like coefficient estimation, evaluate selection performance, sensitivity analysis are ommited here. Please refer to each code file correspondingly.
 
 # RealDataRelated 
 'RealDataRelated' consists of executive functions that process microbiome data and calculate association matrices based on phylogenetic tree.
