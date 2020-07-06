@@ -55,7 +55,9 @@ The second one runs the variable selection on the data once.
 The third one runs sensitivity analysis by changing the sparsity parameter a.
 
 > %%%load functions
-> addpath('C:\Users\lzhang27\Desktop\BayesianCompositionSelection\BayesianGeneralize\GeneralizeCoreFunctions\')
+```MATLAB
+addpath('C:\Users\lzhang27\Desktop\BayesianCompositionSelection\BayesianGeneralize\GeneralizeCoreFunctions\')
+```
 > %%%load simulated data
 > addpath('C:\Users\lzhang27\Desktop\BayesianCompositionSelection\GenerateSimData\')
 > %%%set path
