@@ -54,17 +54,22 @@ The first one splits the data into 90% training data and 10% testing data. It ca
 The second one runs the variable selection on the data once.
 The third one runs sensitivity analysis by changing the sparsity parameter a.
 
+####Example
 > %%%load functions
 ```MATLAB
 addpath('C:\Users\lzhang27\Desktop\BayesianCompositionSelection\BayesianGeneralize\GeneralizeCoreFunctions\')
 ```
 > %%%load simulated data
-> addpath('C:\Users\lzhang27\Desktop\BayesianCompositionSelection\GenerateSimData\')
+```MATLAB
+addpath('C:\Users\lzhang27\Desktop\BayesianCompositionSelection\GenerateSimData\')
+```
 > %%%set path
-> tmp = matlab.desktop.editor.getActive;
-> cd(fileparts(tmp.Filename));
-> mkdir('results\simulation');
-> cd('results\simulation')
+```MATLAB
+tmp = matlab.desktop.editor.getActive;
+cd(fileparts(tmp.Filename));
+mkdir('results\simulation');
+cd('results\simulation')
+```
 
 > rng(2018)
 
