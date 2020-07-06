@@ -18,7 +18,7 @@ The proposed Bayesian sparse regression model addressed the challenges of microb
 # Installation
 Please download the packge to your computer and put it in a workpath that your MATLAB can access to it. The codes are developped under MATLAB 2016.
 
-%This package includes 4 folders: BayesianContrast, BayesianGeneralize, RealDataRelated and GenerateSimData. 
+This package includes 4 folders: BayesianContrast, BayesianGeneralize, RealDataRelated and GenerateSimData. We introduce each of these as follows.
 
 # BayesianContrast 
 'BayesianContrast' stands for Bayesian compositional regression with contrast transformations. 
@@ -26,7 +26,7 @@ Please download the packge to your computer and put it in a workpath that your M
 Within this folder, 'ContrastCoreFunctions' consists of all the functions that will be called when implementing simulation or real data analysis.
 The most important two functions are 'BayesFactor.m' and 'gibbsgamma.m'.
 The first one calculates the Bayes factor.
-The second one samples from the conditional posterior distribution of gamma with excluding or including one model index at each iteration.
+The second one draws samples from the conditional posterior distribution of gamma with excluding or including one model index at each iteration.
 
 'ContrastRealrun' includes the executive functions for real data analysis. Generated numerical and graphical results will be saved in this folder.
 You need to prepare the following input data: OTU table, continous outcome and similarity matrix between OTUs.
@@ -43,7 +43,7 @@ The third one runs sensitivity analysis by changing the sparsity parameter a.
 Within this folder, 'GeneralizeCoreFunctions' consists of all the functions that will be called when implementing simulation or real data analysis.
 The most important two functions are 'BayesFactor.m' and 'gibbsgamma.m'.
 The first one calculates the Bayes factor.
-The second one samples from the conditional posterior distribution of gamma with excluding or including one model index at each iteration.
+The second one draws samples from the conditional posterior distribution of gamma with excluding or including one model index at each iteration.
 
 'GeneralizeRealrun' includes the executive functions for real data analysis. Generated numerical and graphical results will be saved in this folder.
 You need to prepare the following input data: OTU table, continous outcome and similarity matrix between OTUs.
