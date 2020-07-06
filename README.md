@@ -37,7 +37,8 @@ The first one splits the data into 90% training data and 10% testing data. It ca
 The second one runs the variable selection on the data once.
 The third one runs sensitivity analysis by changing the sparsity parameter a.
 
-2. 'BayesianGeneralize' stands for Bayesian compositional regression with generalized transformations. 
+# BayesianGeneralize
+'BayesianGeneralize' stands for Bayesian compositional regression with generalized transformations. 
 
 Within this folder, 'GeneralizeCoreFunctions' consists of all the functions that will be called when implementing simulation or real data analysis.
 The most important two functions are 'BayesFactor.m' and 'gibbsgamma.m'.
@@ -54,7 +55,8 @@ The second one runs the variable selection on the data once.
 The third one runs sensitivity analysis by changing the sparsity parameter a.
 
 
-3. 'RealDataRelated' consists of executive functions that process microbiome data and calculate association matrices based on phylogenetic tree.
+#RealDataRelated 
+'RealDataRelated' consists of executive functions that process microbiome data and calculate association matrices based on phylogenetic tree.
 
 These functions are written in R.
 'phylodistance.R' calculates the distance and correlation along the phylogenetic tree.
@@ -63,8 +65,11 @@ These functions are written in R.
 'plotCorPre.R' plots the correlation and precision matrix obtained from microbiome data.
 
 
-4. 'GenerateSimData' consists of executive functions that generate different simulations scenarios that will be used in 'ContrastSimulation' and 'GeneralizeSimulation'.
+# GenerateSimData
+'GenerateSimData' consists of executive functions that generate different simulations scenarios that will be used in 'ContrastSimulation' and 'GeneralizeSimulation'.
 
 The codes are named as follows, for example, datageneration_str1_snr1_n50_p30.m, denotes independent structure with signal noise ratio 1, sample size n=50 and number of variables p=30. 
 'CoreFunctions' includes the codes that will be called when implementing data generations. 
 
+# Contact
+If you have any questions, please contact me at liangliangzhang.stat@gmail.com
