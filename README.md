@@ -54,7 +54,7 @@ The first one splits the data into 90% training data and 10% testing data. It ca
 The second one runs the variable selection on the data once.
 The third one runs sensitivity analysis by changing the sparsity parameter a.
 
-####Example
+#### Example
 > %%%load functions
 ```MATLAB
 addpath('C:\Users\lzhang27\Desktop\BayesianCompositionSelection\BayesianGeneralize\GeneralizeCoreFunctions\')
@@ -70,35 +70,47 @@ cd(fileparts(tmp.Filename));
 mkdir('results\simulation');
 cd('results\simulation')
 ```
-
-> rng(2018)
-
-> %load data 
-> load str2_snr1.mat
-
-%standadize data
+> %%%set up seed for random numbers
+```MATLAB
+rng(2018)
+seed=100;
+```
+> %%%load data, data was generated before this step
+```MATLAB
+load str2_snr1.mat
+```
+> %%%standadize data
+```MATLAB
 [X,stand.mux,stand.Sx] = zscore(log(Z));
 [Y,stand.muy,stand.Sy] = zscore(Y);
-
-%specify penalty matrix
+```
+> %%%specify generalized transformation
+```MATLAB
 c=100;
 T=[eye(p);c*ones(1,p)]*diag(1./stand.Sx);
-
-%set the number of burn-in steps and iterations
+```
+> %%%set the number of burn-in steps and iterations
+```MATLAB
 nburnin=15000;
 niter=5000;
-
-%initialize gamma and setsort
+```
+> %%%initialize gamma and setsort, nop is a variable position to start Gibbs sampling
+```MATLAB
 nop=floor(n/2);
-
+```
+> %%%initialize the shrinkage paramter in Ising prior
+```MATLAB
 a0=-11;
 a=a0*ones(1,p);
-
+```
+> %%%initialize other parameters
+```MATLAB
 tau=1;
 nu=0;
 omega=0;
-seed=100;
-
+```
+> %%%initialize the structural parameter in Ising prior
+```MATLAB
 Q=0.002*(ones(p,p)-eye(p));
 for i=180:20:380
     for j=(i+20):20:400
@@ -131,12 +143,13 @@ for i=45:59
 end
 
 Q=(Q+Q')/2;
-
+```
+> %%%start the gibbs sampler to do variable selection
+```MATLAB
 tic
 [gamma,betahat,MSE,nselect,Yhat]=gibbsgamma(nburnin,niter,p,nop,Y, X,T, a, Q, n,tau,nu,omega,seed,true,stand,true);
 toc
-
-
+```
 
 # RealDataRelated 
 'RealDataRelated' consists of executive functions that process microbiome data and calculate association matrices based on phylogenetic tree.
